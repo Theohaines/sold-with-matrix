@@ -1,0 +1,56 @@
+@font-face {
+    font-family: 'curryssans-regular';
+    src: url('/fonts/CurrysSans-Regular.otf');
+}
+
+@font-face {
+    font-family: 'curryssans-headline';
+    src: url('/fonts/CurrysSans-Headline.otf');
+}
+
+@font-face {
+    font-family: 'curryssans-headlineoblique';
+    src: url('/fonts/CurrysSans-HeadlineOblique.otf');
+}
+
+:root {
+    --primary : #4C12A1;
+    --secondary : #E5006D;
+    --brightPink : #F9D2E5;
+    --brightYellow : #FFECB7;
+    --brightGreen : #CAE7E6;
+    --brightPurple : #CFC8F7;
+    --neutralWhite : #FFFFFF;
+    --neutralLightGrey : #F2F3F4;
+    --neutralMidGrey : #CDD8DF;
+    --neutralDarkGrey : #56707A;
+    --neutralBlack : #213038;
+}
+
+* {
+    font-family: 'curryssans-regular';
+    margin: 0;
+    padding: 0;
+}
+
+.nav-bar {
+    height: 80px;
+    width: 100vw;
+
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    align-items: center;
+
+    background-color: var(--neutralMidGrey);
+}
+
+.nav-bar img{
+    object-fit: contain;
+    height: 80px;
+    width: auto;
+}
+
+.nav-bar h1{
+    font-family: 'curryssans-headline';
+}

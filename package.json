@@ -1,0 +1,10 @@
+{
+	"scripts": {
+		"start": "nodemon src/swm.js --ext html,css,js,json,env"
+	},
+	"dependencies": {
+		"dotenv": "^16.4.5",
+		"express": "^4.19.2",
+		"sqlite3": "^5.1.7"
+	}
+}
