@@ -27,6 +27,14 @@ app.get("/", (req, res) => {
     res.status(200).sendFile(path.resolve("src/client/pages/landing/index.html"));
 });
 
+app.get("/storeselector", (req, res) => {
+    res.status(200).sendFile(path.resolve("src/client/pages/landing/index.html"));
+});
+
+app.get("/", (req, res) => {
+    res.status(200).sendFile(path.resolve("src/client/pages/landing/index.html"));
+});
+
 //Database querys
 app.use("/getcategory", async (req, res) => {
     var products = await getCategory.getCategory(req.body.category);
