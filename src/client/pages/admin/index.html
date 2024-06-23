@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sold with matrix</title>
+
+    <link rel="stylesheet" href="/styles/global.css">
+    <link rel="stylesheet" href="/admin/admin.css">
+</head>
+<body>
+    <div class="nav-bar">
+        <img src="/media/primarylogo.png" alt="Currys primary logo">
+        <h1>Sold with matrix</h1>
+        <a href="/landing">home</a>
+        <a href="/admin">product management</a>
+        <select name="store-picker" id="storePicker">
+        </select>
+        <button onclick="loginToStore()">change branch</button>
+    </div>
+
+    <div class="main-container">
+        <div class="add-product-form">
+            <h4>product name</h4>
+            <input type="text" id="productName" placeholder="product name...">
+            <h4>product SKU</h4>
+            <input type="number" id="productSku" placeholder="product SKU...">
+            <h4>product category</h4>
+            <select name="add-category" id="addCategory">
+            </select>
+            <button onclick="addProduct()">add item</button>
+        </div>
+
+        <table class="output" id="output">
+            <tr>
+                <th>Name</th>
+                <th>SKU</th>
+                <th>Category</th>
+                <th>Store</th>
+            </tr>
+        </table>
+    </div>
+</body>
+<script src="/scripts/main.js"></script>
+</html>

@@ -13,8 +13,10 @@
         <h1>Sold with matrix</h1>
         <a href="/landing">home</a>
         <a href="/admin">product management</a>
+        <select name="store-picker" id="storePicker">
+        </select>
+        <button onclick="loginToStore()">change branch</button>
     </div>
-    <marquee behavior="left" direction="">| logged in store : 2162 (yeovil) | please make sure your product list is up to date! |</marquee>
 
     <div class="main-container">
         <div class="sort-by">
@@ -74,16 +76,16 @@
                     </div>
                 </div>
             </div>
-
-            <table class="output" id="output">
-                <tr>
-                  <th>Name</th>
-                  <th>SKU</th>
-                  <th>Category</th>
-                  <th>Store</th>
-                </tr>
-            </table>
         </div>
+
+        <table class="output" id="output">
+            <tr>
+              <th>Name</th>
+              <th>SKU</th>
+              <th>Category</th>
+              <th>Store</th>
+            </tr>
+        </table>
     </div>
 </body>
 <script src="/scripts/main.js"></script>

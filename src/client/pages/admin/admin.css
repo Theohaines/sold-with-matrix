@@ -1,0 +1,21 @@
+.add-product-form {
+    width: 80%;
+    text-align: center;
+
+    display: flex;
+    flex-flow: column;
+    row-gap: 5px;
+    align-items: center;
+}
+
+.add-product-form input[type="text"],[type="number"] {
+    width: 20%;
+    height: 30px;
+    font-size: large;
+}
+
+.add-product-form select {
+    width: 20%;
+    height: 30px;
+    font-size: large;
+}
