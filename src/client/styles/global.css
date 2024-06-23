@@ -54,3 +54,59 @@
 .nav-bar h1{
     font-family: 'curryssans-headline';
 }
+
+.main-container {
+    width: 100vw;
+    margin-top: 10px;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.sort-by {
+    width: 80vw;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.sort-by-container{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px
+}
+
+.category-container {
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    column-gap: 10px;
+}
+
+.category-button {
+    padding: 3px;
+
+    width: auto;
+    height: auto;
+    cursor: pointer;
+
+    border-radius: 12px;
+}
+
+.category-button:hover {
+    transition: 1s;
+    box-shadow: 5px 10px var(--secondary);
+}
+
+.category-button img {
+    object-fit: contain;
+    height: 100px;
+    width: 100px;
+}
