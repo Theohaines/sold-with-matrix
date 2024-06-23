@@ -110,3 +110,26 @@
     height: 100px;
     width: 100px;
 }
+
+.output {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.output td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+.output tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+.product-listing {
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+}
